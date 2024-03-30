@@ -1,0 +1,28 @@
+Algoritmo  Promedio
+	Definir prom Como Real
+    Escribir "Programa evaluador de 3 notas por favor ingreselas"
+    prom = 0
+	notaActual = 1
+    
+	Mientras notaActual <=3 Hacer
+		Escribir "Ingrese la nota N° ",notaActual
+		Leer nuevanota
+		Si nuevanota <1.0 Entonces
+			Escribir "La nota tiene que ser al menos 1.0"
+		SiNo
+			Si nuevanota > 7.0 Entonces
+				Escribir "La nota tiene que ser menor a 7.1"
+			SiNo
+				prom=prom + nuevanota
+				notaActual = notaActual+1
+			FinSi
+			
+		Fin Si
+		
+	Fin Mientras
+    
+    prom = prom/3
+    
+    Escribir "El promedio es: ",prom
+    
+FinAlgoritmo

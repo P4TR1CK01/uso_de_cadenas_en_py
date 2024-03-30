@@ -1,0 +1,27 @@
+Algoritmo calcPromedio
+	Definir promedio Como Real
+	Definir notaActual Como Real
+	promedio <- 0
+	notaActual <- 1
+	Mientras notaActual<=3 Hacer
+		Escribir 'Ingrese la nota numero ', (+notaActual)
+		Leer nuevaNota
+		Si nuevaNota<1 Entonces
+			Escribir 'la nota debe ser al menos 1'
+		SiNo
+			Si nuevaNota>7 Entonces
+				Escribir 'la nota debe ser menor a 7'
+			SiNo
+				promedio <- promedio+nuevaNota
+				notaActual <- notaActual+1
+			FinSi
+		FinSi
+		FinMientras
+			promedio <- promedio/3
+		Escribir 'El promedio es: ', (+promedio)
+		Si promedio >= 4 Entonces	
+		Escribir 'Usted a  aprobado satisfactoriamente'
+	SiNo
+		Escribir 'Lo sentimos, usted ha reprobado'
+	FinSi
+FinAlgoritmo
